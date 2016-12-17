@@ -1,0 +1,2 @@
+# whitepaper
+Yobicash whitepaper

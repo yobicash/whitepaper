@@ -1,2 +1,2 @@
 # whitepaper
-Work in progress. Really, don't bother.
+This is an alpha work.

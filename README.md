@@ -1,12 +1,10 @@
-**Yobicash**
-
-**A cryptocurrency for storing and sending encrypted data**
+#Yobicash#
+###A cryptocurrency for storing and sending encrypted data###
 
 Christian Nyumbayire
-
 March, 29, 2017
 
-**Abstract**
+###Abstract###
 
 Yobicash is a cryptocurrency for storing, managing and sending encrypted
 data. Data ownership and user’s privacy are secured thanks to
@@ -15,7 +13,10 @@ data availability and consistency in the presence of untrustable nodes.
 A novel way to build blocks makes it possible to register more than ten
 thousand transactions per second.
 
-**1. Introduction**
+
+
+##1. Introduction##
+
 
 Yobicash is a cryptocurrency that let users store, transfer and delete
 data in a verified and confidential way through a Bitcoin-like
@@ -33,7 +34,8 @@ permission to do any action.
 To ensure its use value, Yobicash prioritize throughput and scalability,
 processing 10 thousand transactions per second for megabyte per block.
 
-**1.1. Historical background**
+
+###1.1. Historical background###
 
 Everything started back in 1988, when Mark S. Miller and K. Eric Drexler
 published three revolutionary papers appeared in “The Ecology of
@@ -69,7 +71,8 @@ government function by reducing verification and network costs \[3\].
 Although the high hopes, the blockchains we daily experience are still
 too specific in use, centralized and cannot scale to reach global usage.
 
-**1.2. Generality**
+
+###1.2. Generality###
 
 Factom \[4\] and Ethereum \[5\] made attempts of generality and they
 could exemplify the way the above issues have been addressed so far:
@@ -111,7 +114,8 @@ environment, building on it token systems and complex contracts. Because
 of its limitations and the lack of safety of its programming language,
 Ethereum is more famous for its hacks \[6\] and missed chances \[7, 8\].
 
-**1.3 The Yobicash Answer**
+
+###1.3 The Yobicash Answer###
 
 Differently from Factom and similar systems, Yobicash is a blockchain
 for data that allows users to put raw data directly on the blockchain,
@@ -129,7 +133,8 @@ of data management, but will be able to see the decrypted data. Signers
 with the majority of the vote weights will have a major weight on
 management issues, if not the last word.
 
-**1.4 Decentralization**
+
+###1.4 Decentralization###
 
 Decentralization assures resilience to the network and it is a guarantee
 of fault tolerance in case of geographically localized malicious actors
@@ -148,7 +153,8 @@ the most famous class from this group of alternative mining algorithms.
 Yobicash uses a modified version of randmemohash, by Damian Lerner
 \[9\].
 
-**1.5 Scalability**
+
+###1.5 Scalability###
 
 Scalability is paramount for a blockchain in order to reach global
 usage. Related to blockchains, it means the capacity of the network to
@@ -176,14 +182,18 @@ transactions.
 This feature could open up to new applications needing fast responses
 times.
 
-**2. Use cases**
+
+
+##2. Use cases##
+
 
 Yobicash is a means for securing data hosting, ownership and transfer in
 an unsafe channel – the cloud. Thanks to its generality and focus on
 scalability, privacy and decentralization, Yobicash allows for many use
 cases.
 
-**2.1. Safe hosting**
+
+###2.1. Safe hosting###
 
 Yobicash allows users to host data and co-own it with different voting
 weights. Some users may be allowed to be only readers, some may be
@@ -193,12 +203,14 @@ holding the majority of voting weights.
 Data can be copied to other users by sending copies to them, while
 deletion are just conversions back to value.
 
-**2.2. Safe messaging**
+
+###2.2. Safe messaging###
 
 Messaging is just transferring data. Thanks to encryption, messaging is
 confidential by default.
 
-**2.3. Proof of existence**
+
+###2.3. Proof of existence###
 
 A proof of existence is an hosted checksum of a digital artifact or the
 artifact itself. While putting the entire data on the blockchain may be
@@ -207,7 +219,8 @@ when the host of the raw data is trusted. The transaction timestamp
 containing the proof may be considered as the timestamp of the digital
 artifact itself.
 
-**2.4. Proof of ownership**
+
+###2.4. Proof of ownership###
 
 A proof of ownership or smart property is a signed proof of existence.
 By signing the proof, signer(s) declare to own the underlined digital
@@ -217,7 +230,8 @@ Trusted signers can co-sign the proof to reinforce the claim. The proof
 transfer from an user or group of users to another one represents a
 transfer of ownership.
 
-**2.5. Proof of authorship**
+
+###2.5. Proof of authorship###
 
 A proof of authorship is a signed proof of existence. Differently from
 the proof of ownership, it is not transferable. This difference is
@@ -228,7 +242,8 @@ semantics).
 Proofs of authorship can be used to enforce intellectual property of
 digital products.
 
-**2.6. Proof of process**
+
+###2.6. Proof of process###
 
 A proof of process is a series of chained proofs of existence or
 authorship, witnessing different phases of a continuous or discrete
@@ -243,7 +258,8 @@ A proof of process can be used for distributed crowd-sourcing,
 crowd-funding and task management. Multi-party computations can store
 their steps on the Yobicash blockchain using it as a safe channel.
 
-**2.7. Smart oracles**
+
+###2.7. Smart oracles###
 
 Smart oracles are proofs of existence or authorship made by trusted
 sources on raw data or checksums, dealing with particular events or
@@ -252,7 +268,8 @@ general facts.
 Financial and IOT applications can read time series data from smart
 oracles writing on the Yobicash blockchain.
 
-**2.8. Smart contracts**
+
+###2.8. Smart contracts###
 
 Smart contracts are proof of processes where the process is the
 execution of some code involving changes of rights, properties or
@@ -268,13 +285,17 @@ The executed code can be in any language the parties agree on, from
 JavaScript to Julia to Haskell. It is a responsibility of the parties
 choosing the language that fits more their needs.
 
-**3. Design**
+
+
+##3. Design##
+
 
 Yobicash design is similar to the Bitcoin’s one, with some key
 differences to ensure simplicity, easy and confidential data management
 and scalability.
 
-**3.1 Overview**
+
+###3.1 Overview###
 
 Yobicash is a Bitcoin-like peer-to-peer network. The network is composed
 by nodes, clients and wallets sharing transactions and blocks.
@@ -308,14 +329,16 @@ order to validate and include them in the blockchain.
 Data can be converted back and forth to the value, which is denominated
 in bytes.
 
-**3.2. Cryptography**
+
+###3.2. Cryptography###
 
 Yobicash relies on 4 cryptographic primitives: cryptographic hashes,
 public key signature, symmetric encryption and public key encryption.
 The following is not a complete specification of Yobicash, but delines
 its main features.
 
-**3.2.1. Cryptographic hashes**
+
+####3.2.1. Cryptographic hashes####
 
 Cryptographic hashes are functions that map binary data of any size to
 equally sized collision-resistant (unique) short binary strings. Digests
@@ -336,7 +359,8 @@ algorithm has the advantage of being memory hard, which means that it
 requires less CPU, so that even a common machine can compete in the
 mining process.
 
-**3.2.2 Public Key Signatures**
+
+####3.2.2 Public Key Signatures####
 
 A public key signature is a scheme for cryptographically signature of a
 binary data message. This scheme generates a couple of keys, the private
@@ -373,7 +397,8 @@ signatures.
 Yobicash uses this scheme to define the users and/or groups addresses
 and to sign transactions and blocks.
 
-**3.2.3. Symmetric Encryption**
+
+####3.2.3. Symmetric Encryption####
 
 A symmetric encryption is a cryptographic scheme for encrypting binary
 data. This scheme generates a secret key which is used to encrypt and
@@ -392,7 +417,8 @@ decrypt(ciph, sk) = msg
 Yobicash uses XSalsa20 as symmetric encryption scheme. This scheme is
 used to encrypt the data stored and sent by groups.
 
-**3.2.4. Public Key Encryption**
+
+####3.2.4. Public Key Encryption####
 
 A public key encryption is a cryptographic scheme for encrypting binary
 data. The schemes generates a pair of keys, a secret key and a public
@@ -421,7 +447,8 @@ Users encrypt the symmetric encryption key used to encrypt data by using
 this algorithm. Each user has different public key encryption keys for
 each of their own wallets.
 
-**3.3 Transactions**
+
+##3.3 Transactions##
 
 A transaction is a data structure used to register the transfer of value
 and encrypted data between groups of users.
@@ -448,7 +475,8 @@ increase their capacity, lowering the required fees. The result is that
 the fee market incentivizes the increase of the available storage and
 intend to keep fees low.
 
-**3.4 Blocks**
+
+##3.4 Blocks##
 
 Blocks are bundles of IDs of confirmed transactions plus a proof-of-work
 and an associated coinbase.
@@ -480,13 +508,17 @@ This, together with the increase of the working memory in order to be
 competitive in the mining process, has the effect of increasing
 scalability.
 
-**4. Future work**
+
+
+##4. Future work##
+
 
 Yobicash is designed to be simple and to be used as a platform for more
 complex services. Security and scalability will remain the main areas of
 improvement to guarantee its value proposition.
 
-**4.1. More scalability**
+
+###4.1. More scalability###
 
 The current scalability measures may do a lot for some time, but
 throughput is never too high. The more can be made to raise throughput
@@ -496,7 +528,8 @@ network simulations, fastening the development. Increasing scalability
 and sustainability will open to new applications, improving benefits for
 both users and the network.
 
-**4.2. Quantum Cryptography**
+
+###4.2. Quantum Cryptography###
 
 Quantum computers threaten all the value stored by current
 cryptocurrencies. From public key signatures to currently used zero
@@ -513,7 +546,8 @@ algorithms will be important. Supersingular isogeny elliptic curve
 cryptography and lattice based cryptography seem the more promising
 solutions so far.
 
-**5. Conclusions**
+
+##5. Conclusions##
 
 Yobicash is currently the first attempt to make data a first class
 citizen within blockchains and to embody the idea of the blockchain as a
@@ -530,7 +564,12 @@ to ensure new alternatives to the current cryptography when quantum
 computers will be available. But right now the post-quantum cryptography
 we quoted above is still immature.
 
-**References**
+
+
+
+
+
+##References##
 
 \[1\] M. S. Miller, K. E. Drexler, *The Ecology of Computation*, 1988
 
@@ -576,4 +615,5 @@ Survey*, 2016
 
 \[17\] PQCrypto, *Post-Quantum Cryptography for Long-Term Security*,
 2016
+
 
